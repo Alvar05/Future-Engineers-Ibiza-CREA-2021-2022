@@ -1,1 +1,1 @@
-Aqui los 5000 caracteres kaj
+Aqui los 5000 caracteres
