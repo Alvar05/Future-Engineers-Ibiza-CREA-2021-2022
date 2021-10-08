@@ -27,7 +27,10 @@ void setup() {
       while (buttonsCurrent() == "D");
     }
   }
-  setLEDColor(15, "GREEN", "NORMAL");  delay(100);  setLEDColor(15, "OFF", "NORMAL");  delay(100);  setLEDColor(15, "GREEN", "NORMAL");  delay(100);  setLEDColor(15, "OFF", "NORMAL");
+  setLEDColor(15, "GREEN", "NORMAL");  delay(100);
+  setLEDColor(15, "OFF", "NORMAL");  delay(100);
+  setLEDColor(15, "GREEN", "NORMAL");  delay(100);
+  setLEDColor(15, "OFF", "NORMAL");
 }
 
 
@@ -36,13 +39,13 @@ void loop() {
   updatePixyPos();
   updateSerial();
   switch (indicePrograma) {
-    case 0:   //PID recto con giroscopio  //Programa LED 1
+    case 0:   //PID with the gyroscope  //LED 1
       Serial.println(sensores.ypr[0]);
       direccion.write(pidGiroscopio(50, 0));
       break;
 
-    case 1:   //PID diagonales con giroscopio //Programa LED 2
-      Serial.println("1");
+    case 1:   //Dodge signs with PID    //LED 2
+      //Serial.println("1");
       static long tiempo = 0;
       Serial.println(posData[0][0] + String(" ") + sensores.ypr[0]);
       if (posData[0][0] < 350) {
@@ -67,7 +70,7 @@ void loop() {
       break;
 
     case 3:
-      Serial.println("3");
+      //Serial.println("3");
       motorStartPower("BC", velocidad);
       break;
   }
