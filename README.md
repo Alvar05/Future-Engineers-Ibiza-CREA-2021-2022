@@ -9,7 +9,7 @@ This board...
 
 ***Photoreceptor encoders***
 
-To measure the distance the robot is driving, we use two TCST 2103 photoreceptors with light diode. Those components are welded to a little board wich only needs Vcc (5V) and GND and has a pin that recieves the pulses from the photoreceptor. We made a cage for this board to be able to attach a gear wich, when rotating, the board will react emitting pulses every few grades of rotation and then with a mathemathic algorythism, the robot calculates the distance it's moving. This cage is also compatible with Lego Mindstorms to be able to attach it to the rest of the body of the robot.
+To measure the distance the robot is driving, we use two TCST 2103 photoreceptors with light diode. Those components are welded to a little board wich only needs Vcc (5V) and GND and has a pin that recieves the pulses from the photoreceptor. We made a cage for this board to be able to attach a gear wich, when rotating, will be detected by the sensor and make the board react emitting pulses every few grades of rotation so then, with a mathemathic algorythism, the robot can calculate the distance it's moving. This cage is also compatible with Lego Mindstorms to be able to attach it to the rest of the body of the robot.
 
 ***Ultrasonic sensors***
 
