@@ -61,7 +61,7 @@ void loop() {
       direccion.write(pidGiroscopio(50, direccionPID));
       break;
 
-    case 2: 
+    case 2:                             //LED 3
       //Serial.println("2");
       /*buttonsWait("U");
       calibrarPixy(0);
@@ -69,7 +69,7 @@ void loop() {
       imprimirSensores();
       break;
 
-    case 3:
+    case 3:                             //LED 4
       //Serial.println("3");
       motorStartPower("BC", velocidad);
       break;
